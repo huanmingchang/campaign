@@ -87,3 +87,77 @@ body {
 .main__table {
   background: var(--table-background-color);
 }
+
+.table__header {
+  background: var(--header-color);
+  color: var(--header-text-color);
+}
+
+.table__row {
+  height: 50px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table__cell {
+  text-align: center;
+}
+
+.table__cell--checkbox {
+  width: 50px;
+}
+
+.table__cell--id {
+  width: 80px;
+}
+
+.table__cell--name {
+  width: 140px;
+}
+
+.table__cell--advertiser {
+  width: 140px;
+}
+
+.cell__advertiser__line {
+  display: block;
+}
+
+.cell__advertiser__line--group {
+  color: var(--table-grey-text);
+}
+
+.table__cell--description {
+  width: 200px;
+}
+
+.table__cell--price {
+  width: 140px;
+  position: relative;
+}
+
+.table__cell--starttime {
+  width: 140px;
+  position: relative;
+}
+
+.table__cell--endtime {
+  width: 140px;
+  position: relative;
+}
+
+.table__cell--action {
+  width: 210px;
+}
+
+.cell__action__icon {
+  cursor: pointer;
+}
+
+.header__cell__icon {
+  cursor: pointer;
+}
+
+.header__cell__icon--right {
+  position: absolute;
+  right: 0;
+}
