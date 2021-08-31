@@ -8,7 +8,37 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <nav class="sidebar"></nav>
+    <nav class="sidebar">
+      <div class="sidebar__home"></div>
+      <div class="sidebar__menu">
+        <div
+          class="
+            sidebar__menu__link
+            sidebar__menu__link--frame
+            sidebar__menu__link--active
+          "
+        >
+          <img
+            src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/frame.svg"
+            alt="frame"
+          />
+        </div>
+        <div class="sidebar__menu__link sidebar__menu__link--folder">
+          <img
+            src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/folder.svg"
+            alt="folder"
+          />
+        </div>
+        <div class="sidebar__menu__link sidebar__menu__link--mail">
+          <img
+            src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/mail.svg"
+            alt="mail"
+          />
+        </div>
+        <!-- darkmode toggle -->
+      </div>
+    </nav>
+
     <main class="main">
       <h1 class="main__title">Campaign</h1>
       <table class="main__table">
@@ -625,6 +655,7 @@
         </tbody>
       </table>
     </main>
+    
     <script src="/main.js"></script>
   </body>
 </html>
