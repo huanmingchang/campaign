@@ -147,6 +147,7 @@ body {
 
 .table__cell--action {
   width: 210px;
+  position: relative;
 }
 
 .cell__action__icon {
@@ -160,4 +161,36 @@ body {
 .header__cell__icon--right {
   position: absolute;
   right: 0;
+}
+
+.action__menu {
+  z-index: 999;
+  position: absolute;
+  right: 50%;
+  top: 100%;
+  width: 140px;
+  height: 120px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+}
+
+.menu__body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+}
+
+.menu__item__icon {
+  margin-right: 14px;
+}
+
+.hidden {
+  display: none;
 }
