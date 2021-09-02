@@ -124,6 +124,10 @@ body {
   width: 50px;
 }
 
+.checked {
+  background: #fd891e;
+}
+
 .table__cell--id {
   width: 80px;
 }
@@ -146,6 +150,15 @@ body {
 
 .table__cell--description {
   width: 200px;
+}
+
+td.table__cell--description {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .table__cell--price {
