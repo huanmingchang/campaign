@@ -27,16 +27,16 @@ function renderTableBody() {
               <img
                 class="cell__action__icon"
                 src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/menu.svg"
-                id="action__input_1"
+                id="action__input_${i}"
                 alt="menu"
               />
               <!-- menu -->
               <div
-                class="action__menu hidden"
+                class="action__menu hidden "
                 role="dialog"
                 aria-modal="true"
-                aria-labelledby="action__input_1"
-                id="action__menu_1"
+                aria-labelledby="action__input_${i}"
+                id="action__menu_${i}"
               >
                 <menu class="menu__body">
                   <menuitem class="menu__item">
@@ -79,7 +79,6 @@ function changeTableBackground() {
 }
 
 function toggleMenu(event) {
-  const menu = document.getElementById("action__menu_1");
   const target = event.target;
 
   if (!target.classList.contains("cell__action__icon")) {
@@ -87,7 +86,7 @@ function toggleMenu(event) {
   }
 
   if (target.classList.contains("cell__action__icon")) {
-    menu.classList.toggle("hidden");
+    target.nextElementSibling.classList.toggle("hidden");
   }
 }
 
