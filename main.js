@@ -69,15 +69,14 @@ function renderTableBody() {
   tableBody.innerHTML = htmlContent;
 }
 
-// function changeTableBackground() {
-//   const id = document.querySelector(".td-id").innerText;
-//   const parent = document.querySelector(".td-id").parentElement;
-//   console.log(id);
-//   console.log(parent);
-//   if (Number(id) % 2 === 0) {
-//     parent.style.background = "var(--zebra-color)";
-//   }
-// }
+function changeTableBackground() {
+  const idArr = document.querySelectorAll(".td-id");
+  idArr.forEach((id) => {
+    if (Number(id.innerText) % 2 === 0) {
+      id.parentElement.style.background = "var(--zebra-color)";
+    }
+  });
+}
 
 function toggleMenu(event) {
   const menu = document.getElementById("action__menu_1");
@@ -113,7 +112,7 @@ function changeCheckedColor(event) {
 }
 
 renderTableBody();
-// changeTableBackground();
+changeTableBackground();
 tableBody.addEventListener("click", changeCheckedColor);
 tableBody.addEventListener("click", toggleMenu);
 darkModeToggle.addEventListener("change", darkModeToggleHandler);
